@@ -1,0 +1,29 @@
+@model User
+<div class="col-6">
+    <div class='split'>
+        <h3>Register</h3>
+        <form method="post" action='register'>
+            <div class="form-group">
+                <label asp-for="first_name"  for="exampleFormControlInput1">First Name:</label>
+                <input asp-for="first_name"  name='first_name' type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <div class="form-group">
+                <label asp-for="last_name"  for="exampleFormControlInput1">Last Name:</label>
+                <input asp-for="last_name" name='last_name' type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <div class="form-group">
+                <label asp-for="email" for="exampleFormControlInput1">Email:</label>
+                <input asp-for="email" name='email' type="email" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <div class="form-group">
+                <label asp-for="pw_hash"  for="exampleFormControlInput1">Password:</label>
+                <input asp-for="pw_hash"  type="password" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <div class="form-group">
+                <label asp-for="confirm" for="exampleFormControlInput1">Confirm Password:</label>
+                <input asp-for="confirm"  type="password" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <input type='submit' class='btn btn-primary' value="Register">
+        </form>
+    </div>
+</div>
